@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_over_survival"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context="com.example.andri.trueorfalse1.GameOverSurvivalActivity">
+
+
+    <ImageView
+        android:id="@+id/gameOverIV"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/game_over_survival"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resTV"
+        android:text="@string/resultTV"
+        android:textStyle="normal"
+        android:textSize="30sp"
+        android:layout_below="@+id/gameOverIV"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/titleColor"/>
+
+
+    <LinearLayout
+        android:id="@+id/resLL"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/resTV"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            app:srcCompat="@drawable/rating" />
+
+        <TextView
+            android:id="@+id/resultTimeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="35sp"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bestScoreTitleTV"
+        android:text="@string/bestScoreTV"
+        android:textStyle="normal"
+        android:textSize="30sp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/resLL"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/titleColor"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/bestScoreTV"
+        android:layout_toLeftOf="@+id/bestScoreLL"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        app:srcCompat="@drawable/new_record"
+        android:visibility="invisible"
+        android:id="@+id/newRecordTimeIV"/>
+
+    <LinearLayout
+        android:id="@+id/bestScoreLL"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bestScoreTitleTV"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            app:srcCompat="@drawable/rating"
+            android:id="@+id/bestScoreTimeIV"/>
+
+        <TextView
+            android:id="@+id/bestScoreTimeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="35sp"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/playAgainTimeBtn"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_game_over"
+        android:text="@string/playAgainSurvivalButton"
+        android:textColor="@color/buttonTextColor"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/mainMenuTimeBtn"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_game_over"
+        android:text="@string/mainMenuSurvivalButton"
+        android:textColor="@color/buttonTextColor"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

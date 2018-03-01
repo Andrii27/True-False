@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_multiplayer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context="com.example.andri.trueorfalse1.MultiplayerActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/playerRL2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:weightSum="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginTop="10dp"
+                android:rotation="180">
+
+                <Button
+                    android:id="@+id/falseMultiBtn2"
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:text="@string/trueName"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/true_button"
+                    android:textSize="30sp"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/trueMultiBtn2"
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:text="@string/falseName"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/false_button"
+                    android:textStyle="normal|bold"
+                    android:textSize="30sp"
+                    android:textColor="@color/buttonTextColor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/skipSurvivalBtn"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="На футбольному матчі одночасно можуть бути 5 суддей"
+                    android:textColor="@color/textColor"
+                    android:rotation="180"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/factMultiTV2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#000000"
+                    android:textColor="@color/buttonTextColor"
+                    android:text="0 : 0"
+                    android:rotation="180"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/scoreTableMultiTV2" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/right"
+                android:id="@+id/rightMultiIV2"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="25dp"
+                android:rotation="180"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/wrong"
+                android:id="@+id/wrongMultiIV2"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="25dp"
+                android:rotation="180"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/buttonTextColor"
+            android:text=""/>
+
+        <RelativeLayout
+            android:id="@+id/playerRL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#000000"
+                    android:textColor="@color/buttonTextColor"
+                    android:text="0 : 0"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/scoreTableMultiTV1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/skipSurvivalBtn"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="На футбольному матчі одночасно можуть бути 5 суддей"
+                    android:textColor="@color/textColor"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/factMultiTV1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:weightSum="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/trueMultiBtn1"
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:text="@string/trueName"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/true_button"
+                    android:textSize="30sp"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/falseMultiBtn1"
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:text="@string/falseName"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/false_button"
+                    android:textStyle="normal|bold"
+                    android:textSize="30sp"
+                    android:textColor="@color/buttonTextColor" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/right"
+                android:id="@+id/rightMultiIV1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/wrong"
+                android:id="@+id/wrongMultiIV1"
+                android:visibility="invisible"
+                android:layout_alignTop="@+id/rightMultiIV1"
+                android:layout_alignLeft="@+id/rightMultiIV1"
+                android:layout_alignStart="@+id/rightMultiIV1" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

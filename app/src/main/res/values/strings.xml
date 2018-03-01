@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">True or False</string>
+
+    <string name="trueName">Правда</string>
+    <string name="falseName">Брехня</string>
+    <string name="OrName">ч</string>
+    <string name="oRName">и</string>
+
+    <string name="playButton">ГРАТИ</string>
+    <string name="ratingButton">РЕЙТИНГ</string>
+    <string name="rulesButton">ПРАВИЛА</string>
+    <string name="scoreButton">ОЦІНИТИ</string>
+    <string name="exitButton">ВИХІД</string>
+
+    <string name="modsTitle">Режими гри</string>
+    <string name="survivalModButton">ВИЖИВАННЯ</string>
+    <string name="timeModButton">НА ЧАС</string>
+    <string name="multiModButton">МУЛЬТИПЛЕЄР</string>
+    <string name="categoryModButton">ОБРАТИ КТЕГОРІЮ</string>
+
+    <string name="skipButton">Пропустити</string>
+
+    <string name="categoryTitle">Категорії</string>
+    <string name="selectCategoryButton">ГРАТИ</string>
+    <string-array name="categories">
+        <item>Футбол</item>
+        <item>Автомобіль</item>
+        <item>Географія</item>
+        <item>Історія</item>
+        <item>Мистецтво</item>
+        <item>Музика</item>
+        <item>Спорт</item>
+        <item>Кінематонраф</item>
+        <item>Література</item>
+        <item>Океан</item>
+        <item>Зоологія</item>
+        <item>Ботаніка</item>
+        <item>Анатомія людини</item>
+    </string-array>
+
+    <string name="resultTV">Ваш результат</string>
+    <string name="playAgainSurvivalButton">Зіграти знову</string>
+    <string name="mainMenuSurvivalButton">Головне меню</string>
+    <string name="bestScoreTV">Кращий результат</string>
+
+    <string name="rulesTitle">Правила</string>
+    <string name="survivalRulesTitle">Виживання</string>
+    <string name="survivalRules">Гравцю послідовно будуть показані певні факти, з якими він повинен погодитись (натиснути кнопку "Правда") або не погодитись (натиснути кнопку "Брехня"). На початку дається 5 життів, які будуть втрачатися в процесі гри у випадку неправильної відповіді. Також в арсеналі гравця є 4 пропуски ходу, якщо він не впевнений у наданому твердженні. Кожна правильна відповідь оцінюється в 1 бал. Гра завершиться, коли усі життя будуть втрачені. Найкращий результат зберігається.</string>
+    <string name="timeRulesTitle">На час</string>
+    <string name="timeRules">Гравцю послідовно будуть показані певні факти, з якими він повинен погодитись або не погодитись. На відміну від життів у режимі "Виживання", дається 30 секунд для набору максимальної кількості балів. Гра завершиться, коли час буде вичерпано.</string>
+    <string name="multiplayerRulesTitle">Мультиплеєр</string>
+    <string name="multiplayerRules">В даному режими можуть грати двоє гравців один проти одного. В кожного є власна частина екрану, де відображатимуться однікові для гравців факти та для кожного свій рахунок. Гравцям одночасно демонстуються однакові факти, хто швидше відповість, той отримає бал для себе (у випадку правильної відповіді) чи для суперника (у випадку неправильної відповіді). Гра завершиться, коли один із гравців набере 5 балів (він і буде переможцем).</string>
+    <string name="categoryRulesTitle">Обрати категорію</string>
+    <string name="categoryRules">Гравцю надається можливість вибрати категорії, за якими він бажає отримувати факти, з наявного списку. Після чого можна вибрати один з двох режимів гри:"Виживання" чи "На час". Надалі гра відбувається за правилами відповідної категорії.</string>
+
+</resources>

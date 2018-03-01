@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context="com.example.andri.trueorfalse1.MainActivity">
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/playBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button"
+            android:text="@string/playButton"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:id="@+id/rulesBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button"
+            android:text="@string/rulesButton"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:id="@+id/scoreBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button"
+            android:text="@string/scoreButton"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:id="@+id/exitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/button"
+            android:text="@string/exitButton"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/trueTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/trueName"
+            android:textColor="@color/trueColor"
+            android:textSize="40sp"
+            android:textStyle="normal|bold|italic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/OrTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:text="@string/OrName"
+                android:textSize="23sp"
+                android:textStyle="normal|bold|italic"
+                android:textColor="#137d0e" />
+
+            <TextView
+                android:id="@+id/oRTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oRName"
+                android:textSize="23sp"
+                android:textStyle="normal|bold|italic"
+                android:textColor="#8b1515" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/falseTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/falseName"
+            android:textColor="@color/falseColor"
+            android:textSize="40sp"
+            android:textStyle="normal|bold|italic"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <ImageView
+        app:srcCompat="@drawable/sound"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/mainSettingsIV"
+        android:layout_height="30dp"
+        android:layout_width="30dp" />
+
+
+</RelativeLayout>

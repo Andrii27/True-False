@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="backgroundColor">#1D2152</color>
+    <color name="trueColor">#41b62f</color>
+    <color name="falseColor">#d31c17</color>
+    <color name="buttonColor">#08ae9e</color>
+    <color name="titleColor">#666666</color>
+    <color name="textColor">#6ACCCB</color>
+    <color name="skipColor">#689ACA</color>
+    <color name="skipBorderColor">#000055</color>
+    <color name="skipTextColor">#1D2152</color>
+    <color name="buttonTextColor">#ffffff</color>
+    <color name="gameOverSurvivalButtonColor">#01B8DE</color>
+</resources>
