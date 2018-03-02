@@ -1,9 +1,15 @@
-The app has 4 game mods: 
+The app allows you to choose one of the following modes: 
 Survival, Time, 
 Multiplayer, 
 Category choice.
 
+In Survival mode player has 5 lifes and can skip questions 4 times. 
 
+Time mode gives 30 seconds to answer the biggest possible number of questions.
+
+Multiplayer mode allows you to compete with one friend on you device.
+
+Also there is an opportunity to choose questions topics in the last mode.
 
 ![main_screen](https://user-images.githubusercontent.com/34740989/36920566-bd89eb42-1e69-11e8-8138-dbefabb3b3da.png)
 ![game_mods](https://user-images.githubusercontent.com/34740989/36920567-bea2e7fe-1e69-11e8-999b-10a13782bf37.png)
