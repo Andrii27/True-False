@@ -1,3 +1,10 @@
+The app has 4 game mods: 
+Survival, Time, 
+Multiplayer, 
+Category choice.
+
+
+
 ![main_screen](https://user-images.githubusercontent.com/34740989/36920566-bd89eb42-1e69-11e8-8138-dbefabb3b3da.png)
 ![game_mods](https://user-images.githubusercontent.com/34740989/36920567-bea2e7fe-1e69-11e8-999b-10a13782bf37.png)
 ![survival_mod](https://user-images.githubusercontent.com/34740989/36920568-bf73cf18-1e69-11e8-9d22-deb2a4e09178.png)
